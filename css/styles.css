@@ -1,0 +1,181 @@
+/* Typography */
+
+html {
+    font-family: monospace,'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    line-height: 18px;
+}
+
+
+/* Layout */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    gap: 32px;
+}
+
+#features>div {
+    flex: 1;
+}
+
+img {
+    max-height: 300px;
+    width: auto;
+}
+
+main section {
+    padding: 60px 20px 0 20px;
+}
+
+
+/* ----------------------------------------------------------*/
+/* Requested Style */
+
+/* 2. Zebra Striped Pattern Table */
+thead:nth-child(1){
+    font-weight: 800;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #A6330A;
+}
+
+/* 3. Navigation Links As Buttons */
+/* Accessibility: Using the Colors with high contrast */
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 1em;
+}
+
+header > nav a{
+    background-color: #000;
+    text-decoration: none;
+    padding: 1em;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header > nav a:hover{
+    background-color: #333;
+    padding: 1em 2em;
+    color: #fff;
+}
+
+header > nav a:active{
+    background-color: #bbb;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+header > nav a:focus{
+    border: 2px solid #ff6800;
+}
+
+/* 4. Link Style */
+a{
+    color: #ff6800;
+    border: 1px dotted rgba(255,255,255,0);
+}
+
+a:hover{
+    color: #D9320D;
+}
+
+a:focus{
+    border: 1px dotted rgba(255,255,255,0.5);
+}
+
+/* 5. Style the ordered and unordered lists */
+ul, ol{
+    margin: auto;
+    max-width: 300px;
+}
+
+ul{
+    list-style-type:square;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+}
+
+
+/* ----------------------------------------------------------*/
+/* Other Style */
+
+body{
+    background-color: #000;
+    color: #EEF2D0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction:column;
+    background-color: #400716;
+}
+
+.wrapper > *:not(footer), main > *{
+    min-height: 60vh;
+    width: 100%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper, table{
+    text-align: center;
+    margin: auto;
+}
+
+main > *{
+    box-sizing: border-box;
+    padding: 5vw !important;
+}
+
+section:nth-child(odd){
+    background-color: #730A26;
+}
+
+.flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex > *{
+    flex: 1;
+    min-width: 400px;
+}
+
+#about div:first-child{
+    flex:0;
+}
+
+#features{
+    flex-direction: row;
+}
+
+.footer{
+    height: initial;
+}
